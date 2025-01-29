@@ -2,7 +2,8 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
+
+  }
 .footer__address-list {
   list-style: none;
 }
@@ -55,7 +56,15 @@
 .footer__container {
   display: flex;
   align-items: baseline;
+
+
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 .footer__left {
   margin-right: 70px;
   width: 231px;

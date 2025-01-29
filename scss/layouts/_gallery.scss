@@ -1,5 +1,9 @@
 .about-container {
   padding-bottom: 94px;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
 }
 
 .gallery {

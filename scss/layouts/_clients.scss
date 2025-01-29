@@ -1,6 +1,10 @@
 .clients-list {
   padding-top: 94px;
   padding-bottom: 94px;
+
+@include mq(mobile-only) {
+   padding-top: 60px;
+}
 }
 .clients-list__about {
   list-style: none;
@@ -8,6 +12,13 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+@include mq(mobile-only) {
+  display: flex;
+  flex-wrap: wrap;        
+  gap: 30px;
+  
+}
 }
 .clients-list__link {
   display: flex;
@@ -42,4 +53,9 @@
   letter-spacing: 0.03em;
   color: currentColor;
   margin-bottom: 50px;
+
+  @include mq(mobile-only) {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
 }

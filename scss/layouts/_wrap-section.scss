@@ -1,8 +1,12 @@
 .container-wrap {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
+  @include mq(mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .container-wrap__text-subtitle {
   font-family: inherit;
   font-weight: 700;
@@ -39,6 +43,13 @@
 .text-container {
   gap: 30px;
   display: flex;
+
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }
 .about-text {
   width: 270px;
