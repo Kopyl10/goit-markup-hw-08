@@ -2,6 +2,11 @@
   display: flex;
   gap: 30px;
   border-radius: 0 0 4px 4px;
+
+  @include mq(tablet-only) {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .member-card {
@@ -11,8 +16,8 @@
 }
 .team-section {
   background: #f5f4fa;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .title-secondary {
@@ -47,8 +52,37 @@
 .team-list {
   @include mq(mobile-only) {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
-    padding-bottom: 60px;
+    justify-content: center;
+  }
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+.about-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: currentColor;
+  margin-bottom: 30px;
+}
+.member-img {
+  @include mq(tablet-only) {
+    max-width: 354px;
+  }
+  @include mq(desktop) {
+    max-width: 270px;
   }
 }

@@ -1,10 +1,6 @@
 .clients-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-@include mq(mobile-only) {
-   padding-top: 60px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .clients-list__about {
   list-style: none;
@@ -12,13 +8,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-
-@include mq(mobile-only) {
-  display: flex;
-  flex-wrap: wrap;        
-  gap: 30px;
-  
-}
+  flex-wrap: wrap;
 }
 .clients-list__link {
   display: flex;
@@ -26,12 +16,10 @@
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
 
   &:hover {
-  border-color: var(--accent-color);
-}
+    border-color: var(--accent-color);
+  }
 }
 .clients-mode {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,6 +28,14 @@
 .clients-list__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+  height: 92px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(desktop) {
+    width: 170px;
+  }
 }
 .clients-list__link:hover .clients-list__icon,
 .clients-list__link:focus .clients-list__icon {
@@ -57,5 +53,5 @@
   @include mq(mobile-only) {
     font-size: 28px;
     margin-bottom: 30px;
-}
+  }
 }

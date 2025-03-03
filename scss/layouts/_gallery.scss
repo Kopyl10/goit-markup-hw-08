@@ -4,20 +4,15 @@
   @include mq(mobile-only) {
     display: none;
   }
+  @include mq(tablet-only) {
+    display: none;
+  }
 }
 
 .gallery {
   position: relative;
 }
-.text {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: currentColor;
-  margin-bottom: 50px;
-}
+
 .gallery-text::after {
   position: absolute;
   content: '';
@@ -48,9 +43,6 @@
   justify-content: center;
 }
 
-.about-text {
-  width: 270px;
-}
 .about-img {
   display: block;
 }
