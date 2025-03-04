@@ -51,11 +51,18 @@
   @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
-    max-width: 354px;
   }
 
   @include mq(desktop) {
     display: flex;
     gap: 30px;
+  }
+}
+
+.container-wrap__text {
+  @include mq(tablet-only) {
+    max-width: 354px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
