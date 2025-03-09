@@ -266,6 +266,6 @@
     gap: 20px;
   }
   @include mq(desktop) {
-    gap: 70px;
+    gap: 0;
   }
 }

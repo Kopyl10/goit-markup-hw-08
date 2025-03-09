@@ -14,9 +14,9 @@
     ),
     url(../images/Index/Imgbackground.jpg);
 
-  @include mq(mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @include mq(mobile-only) {
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     background-image: linear-gradient(
         to bottom,
@@ -24,17 +24,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/gallery/main-img_sm.jpg);
-
-    @include mq(retina) {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/gallery/main-img_sm@2x.jpg);
-    }
   }
-  @include mq(tablet) {
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/gallery/main-img_sm@2x.jpg);
+  }
+  @include mq(tablet-only) {
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -44,16 +43,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/gallery/main-img_md.jpg);
-
-    @include mq(retina) {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/gallery/main-img_md@2x.jpg);
-    }
   }
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/gallery/main-img_md@2x.jpg);
+  }
+
   @include mq(desktop) {
     padding-top: 195px;
     padding-bottom: 200px;
@@ -64,22 +63,17 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/gallery/main-img_lg.jpg);
-
-    @include mq(retina) {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/gallery/main-img_lg@2x.jpg);
-    }
+  }
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/gallery/main-img_lg@2x.jpg);
   }
 }
 
-.hero-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .main-section {
   text-align: center;
 }
@@ -122,5 +116,10 @@
   @include mq(mobile-only) {
     width: 360px;
     height: 164px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .main-text-size {
+    width: 300px;
   }
 }

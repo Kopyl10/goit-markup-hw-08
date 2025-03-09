@@ -196,6 +196,10 @@
     color: var(--accent-color);
   }
 }
+
+.mobile-menu__current {
+  color: var(--accent-color);
+}
 .menu__icon {
   fill: #212121;
   cursor: pointer;

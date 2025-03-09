@@ -1,3 +1,18 @@
+.hero-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @include mq(mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include mq(tablet-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .img-about {
   width: 370px;
   height: 404px;
@@ -13,6 +28,13 @@
 }
 .img-item {
   display: block;
+
+  @include mq(mobile-only) {
+    width: 450px;
+  }
+  @include mq(tablet-only) {
+    width: 354px;
+  }
 }
 .img-block {
   display: block;
@@ -68,4 +90,21 @@
   border-bottom: 1px solid #eee;
   border-top: none;
   padding: 20px 24px;
+}
+.hero-section__btn {
+  @include mq(mobile-only) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+}
+.hero-section__img {
+  @include mq(mobile-only) {
+    width: 450px;
+  }
+
+  @include mq(tablet-only) {
+    width: 354px;
+  }
 }
