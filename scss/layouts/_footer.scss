@@ -2,15 +2,12 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-// .footer__container {
-//   @include mq(tablet) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-// }
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .footer__address-list {
   list-style: none;
 }
@@ -267,5 +264,11 @@
   }
   @include mq(desktop) {
     gap: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .footer-wrap__form,
+  .footer-wrap__input-email {
+    width: 300px;
   }
 }

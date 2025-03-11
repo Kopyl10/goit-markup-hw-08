@@ -5,14 +5,14 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  padding-top: 195px;
+  padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Index/Imgbackground.jpg);
+  // background-image: linear-gradient(
+  //     to bottom,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url(../images/Index/imgbackground.jpg);
 
   @include mq(mobile-only) {
     padding-top: 118px;
@@ -54,7 +54,7 @@
   }
 
   @include mq(desktop) {
-    padding-top: 195px;
+    padding-top: 200px;
     padding-bottom: 200px;
 
     background-image: linear-gradient(
@@ -90,6 +90,10 @@
   @include mq(mobile-only) {
     font-size: 26px;
   }
+
+  @include mq(tablet-only) {
+    font-size: 26px;
+  }
 }
 .main-text-size {
   margin-bottom: 30px;
@@ -98,6 +102,10 @@
   margin-right: auto;
 
   @include mq(mobile-only) {
+    width: 360px;
+  }
+
+  @include mq(tablet-only) {
     width: 360px;
   }
 }
@@ -118,7 +126,7 @@
     height: 164px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .main-text-size {
     width: 300px;
   }

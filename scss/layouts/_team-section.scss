@@ -18,6 +18,11 @@
   background: #f5f4fa;
   padding-bottom: 60px;
   padding-top: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title-secondary {
@@ -86,7 +91,7 @@
     max-width: 270px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .member-img {
     width: 300px;
   }

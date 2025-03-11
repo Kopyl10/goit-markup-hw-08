@@ -1,6 +1,11 @@
 .container-wrap {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container-wrap__text-subtitle {
