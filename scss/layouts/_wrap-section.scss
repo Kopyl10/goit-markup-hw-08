@@ -17,6 +17,10 @@
   color: currentColor;
   margin-bottom: 10px;
   text-align: center;
+
+  @include mq(desktop) {
+    text-align: left;
+  }
 }
 
 .container-wrap__text-undertitle {

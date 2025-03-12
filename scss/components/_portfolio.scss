@@ -36,6 +36,20 @@
     width: 354px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .img-item {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .img-about {
+    height: auto;
+  }
+}
+
 .img-block {
   display: block;
 }
@@ -98,6 +112,9 @@
     justify-content: flex-start;
     margin-bottom: 40px;
   }
+  @include mq(tablet-only) {
+    margin-bottom: 14px;
+  }
 }
 .hero-section__img {
   @include mq(mobile-only) {
@@ -106,5 +123,16 @@
 
   @include mq(tablet-only) {
     width: 354px;
+  }
+}
+.about-photo__img {
+  @include mq(tablet-only) {
+    padding: 20px 24px 56px 24px;
+  }
+}
+.img-about__card {
+  @include mq(tablet-only) {
+    width: 354px;
+    height: 440px;
   }
 }
