@@ -29,6 +29,11 @@
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
+  @include mq(mobile-only) {
+    border-radius: 4px;
+    width: 450px;
+    height: 609px;
+  }
   @include mq(tablet-only) {
     width: 450px;
     height: 609px;
@@ -40,6 +45,7 @@
     border-radius: 4px;
     width: 290px;
     height: 570px;
+    padding: 20px;
   }
 }
 
@@ -171,6 +177,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mq(mobile-only) {
+    font-size: 12px;
+  }
+  @include mq(tablet-only) {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal-form__privacy {
+    display: -webkit-box;
+  }
 }
 
 .modal-form__link {
@@ -219,16 +238,6 @@
   + label
   .modal-form__checkbox-icon {
   border-color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .modal-wrapper {
-    height: auto;
-    max-width: 450px;
-
-    padding: 20px;
-    border-radius: 8px;
-  }
 }
 
 .modal-form {

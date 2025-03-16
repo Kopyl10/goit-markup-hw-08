@@ -335,30 +335,58 @@
           <h2 class="text">Чим ми займаємося</h2>
           <ul class="main-img page-list img-wrap">
             <li class="gallery">
-              <img
-                src="./images/Index/img1.jpg"
-                alt="Person is coding"
-                class="about-img"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="
+                    ./images/Index/img1.jpg     1x,
+                    ./images/Index/img-1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/Index/img1.jpg"
+                  alt="Person is coding"
+                  class="about-img"
+                  width="370"
+                />
+              </picture>
               <p class="gallery-text">Десктопні додатки</p>
             </li>
             <li class="gallery">
-              <img
-                src="./images/Index/img2.jpg"
-                alt="Person is holding a phone"
-                class="about-img"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="
+                    ./images/Index/img2.jpg     1x,
+                    ./images/Index/img-2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/Index/img2.jpg"
+                  alt="Person is holding a phone"
+                  class="about-img"
+                  width="370"
+                />
+              </picture>
               <p class="gallery-text">Мобільні додатки</p>
             </li>
             <li class="gallery">
-              <img
-                src="./images/Index/img3.jpg"
-                alt="Person is drawing on Ipad"
-                class="about-img"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="
+                    ./images/Index/img3.jpg     1x,
+                    ./images/Index/img-3@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/Index/img3.jpg"
+                  alt="Person is drawing on Ipad"
+                  class="about-img"
+                  width="370"
+              /></picture>
               <p class="gallery-text">Дизайнерські рішення</p>
             </li>
           </ul>

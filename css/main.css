@@ -244,6 +244,13 @@ ol {
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+@media screen and (max-width: 767.98px) {
+  .modal-wrapper {
+    border-radius: 4px;
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .modal-wrapper {
     width: 450px;
@@ -256,6 +263,7 @@ ol {
     border-radius: 4px;
     width: 290px;
     height: 570px;
+    padding: 20px;
   }
 }
 .backdrop.is-hidden .modal-wrapper {
@@ -403,7 +411,22 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767.98px) {
+  .modal-form__privacy {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .modal-form__privacy {
+    font-size: 12px;
+  }
+}
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal-form__privacy {
+    display: -webkit-box;
+  }
+}
 .modal-form__link {
   color: var(--accent-color);
   text-decoration: underline;
@@ -463,14 +486,6 @@ ol {
   border-color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-  .modal-wrapper {
-    height: auto;
-    max-width: 450px;
-    padding: 20px;
-    border-radius: 8px;
-  }
-}
 .modal-form {
   width: 100%;
 }
@@ -621,6 +636,12 @@ ol {
   padding: 63px 24px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .overlay-text {
+    font-size: 15px;
+    padding: 40px 24px;
+  }
+}
 .img-block:hover .overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -674,7 +695,7 @@ ol {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero-section__btn {
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 
@@ -691,7 +712,9 @@ ol {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .about-photo__img {
-    padding: 20px 24px 56px 24px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -700,6 +723,17 @@ ol {
     width: 354px;
     height: 440px;
   }
+}
+
+.img-about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .logo {
@@ -1094,7 +1128,7 @@ ol {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gallery/main-img_sm.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .main-section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/gallery/main-img_sm@2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gallery/main-img_sm@2x.jpg);
@@ -1108,7 +1142,7 @@ ol {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gallery/main-img_md.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .main-section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/gallery/main-img_md@2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gallery/main-img_md@2x.jpg);
@@ -1122,7 +1156,7 @@ ol {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gallery/main-img_lg.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .main-section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/gallery/main-img_lg@2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/gallery/main-img_lg@2x.jpg);
