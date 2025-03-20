@@ -7,12 +7,12 @@
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Index/imgbackground.jpg);
+  // background-image: linear-gradient(
+  //     to bottom,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url(../images/Index/imgbackground.jpg);
 
   @include mq(mobile-only) {
     padding-top: 118px;
@@ -24,16 +24,18 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/gallery/main-img_sm.jpg);
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/gallery/main-img_sm@2x.jpg);
-  }
 
+    @media screen and (min-deviсe-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/gallery/main-img_sm@2x.jpg);
+    }
+  }
   @include mq(tablet-only) {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -44,16 +46,18 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/gallery/main-img_md.jpg);
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/gallery/main-img_md@2x.jpg);
-  }
 
+    @media screen and (min-deviсe-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/gallery/main-img_md@2x.jpg);
+    }
+  }
   @include mq(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -64,17 +68,18 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/gallery/main-img_lg.jpg);
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/gallery/main-img_lg@2x.jpg);
+    @media screen and (min-deviсe-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/gallery/main-img_lg@2x.jpg);
+    }
   }
 }
-
 .main-section {
   text-align: center;
 }
